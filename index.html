@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet d'Ostéopathie - Mickaël FORCIOLI & Étienne BOUTET</title>
+    <link rel="stylesheet" href="./static/base.css">
+    <link rel="stylesheet" href="./static/accueil.css">
+    <link rel="stylesheet" href="./static/equipe.css">
+    <link rel="stylesheet" href="./static/osteopathie.css">
+    <link rel="stylesheet" href="./static/contact.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Cabinet d'Ostéopathie - Europole</div>
+        <ul class="nav-links">
+            <li><button id="accueil">Accueil</button></li>
+            <li><button id="osteopathie">L'Ostéopathie</button></li>
+            <li><button id="equipe">L'équipe</button></li>
+            <li><button id="contact">Contact</button></li>
+        </ul>
+        <button id="contact-btn" class="btn-appointment">Prendre Rendez-vous</button>
+    </nav>
+
+    <div class="content">
+        <section class="hero" id="accueil">
+        <h1>Bienvenue sur le site du cabinet d'ostéopathie<br>
+            de Mickaël FORCIOLI et Étienne BOUTET
+        </h1>
+    </section>
+
+    <section class="team-section" id="equipe">
+        <div class="team-container">
+            <div class="team-image">
+                <div id = "team-image-div">
+                    <img src = "./static/photo/duo.jpg">
+                </div>
+            </div>
+            <div class="team-info">
+                <h2>Une équipe à votre écoute</h2>
+                <p>
+                    Mickaël FORCIOLI et Étienne BOUTET vous accueillent dans leur cabinet d'ostéopathie situé à Europole. 
+                    Diplômés et expérimentés, ils mettent leur expertise au service de votre bien-être et de votre santé.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="info-card">
+            <div class="icon">🕐</div>
+            <div class="info-content">
+                <h2>Horaires d'ouverture</h2>
+                <p>Le cabinet est ouvert du <span class="highlight">Lundi au Vendredi</span> de <span class="highlight">8h30 à 19h</span></p>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <div class="icon">💶</div>
+            <div class="info-content">
+                <h2>Tarifs</h2>
+                <p><span class="highlight">65 € par séance</span> ; Chèque ou Espèces.</p>
+                <p>Renseignez-vous auprès de votre mutuelle, la plupart des mutuelles remboursent les séances d'ostéopathie.</p>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+    <section class="cta-section" id="rdv">
+        <h2>Pour toute prise de rendez-vous</h2>
+         <button id="contact-btn"class="cta-button">Cliquez</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cabinet d'Ostéopathie Mickaël FORCIOLI & Étienne BOUTET - Tous droits réservés</p>
+    </footer>
+</body>
+
+<script src="./static/javascript.js"></script>
+</html>
