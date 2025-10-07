@@ -176,27 +176,57 @@
     line-height: 1.6;
 }
 
-/* ========== RESPONSIVE ÉQUIPE ========== */
+/* ========== RESPONSIVE BASE ========== */
 @media (max-width: 768px) {
-    .team-detail-section {
-        flex-direction: column;
-        min-height: auto;
+nav {
+        flex-wrap: wrap;
+        padding: 1rem;
+        justify-content: center;
     }
 
-    .team-member {
-        min-height: 50vh;
-        padding: 3rem 1.5rem;
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
     }
 
-    .member-info {
-        padding: 2rem;
+    .nav-links {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
     }
 
-    .member-info h2 {
+    .nav-links button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .btn-appointment {
+        order: 3;
+        width: auto;
+    }
+
+    .hero {
+        padding-top: 10rem;
+    }
+
+    .hero h1 {
         font-size: 1.8rem;
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links button {
+        padding: 6px 12px;
+        font-size: 12px;
     }
 
-    .values-grid {
-        grid-template-columns: 1fr;
+    .btn-appointment {
+        padding: 0.6rem 1.2rem;
+        font-size: 14px;
     }
 }

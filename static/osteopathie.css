@@ -139,22 +139,57 @@
     margin: 0;
 }
 
-/* ========== RESPONSIVE OSTÉOPATHIE ========== */
+/* ========== RESPONSIVE BASE ========== */
 @media (max-width: 768px) {
-    .info-grid {
-        grid-template-columns: 1fr;
+nav {
+        flex-wrap: wrap;
+        padding: 1rem;
+        justify-content: center;
     }
 
-    .step {
-        flex-direction: column;
-        gap: 1rem;
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
     }
 
-    .content-container h2 {
-        font-size: 1.5rem;
+    .nav-links {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
     }
 
-    .content-container h3 {
-        font-size: 1.3rem;
+    .nav-links button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .btn-appointment {
+        order: 3;
+        width: auto;
+    }
+
+    .hero {
+        padding-top: 10rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .btn-appointment {
+        padding: 0.6rem 1.2rem;
+        font-size: 14px;
     }
 }
