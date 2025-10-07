@@ -5,7 +5,7 @@ const content = document.querySelector(".content");
 document.querySelector(".nav-links").addEventListener("click", (e) => {
     content.innerHTML = "";
     if (e.target && e.target.id === "accueil") {
-        
+
         content.innerHTML = `
         <section class="hero" id="accueil">
             <h1>Bienvenue sur le site du cabinet d'ostéopathie<br>
@@ -49,9 +49,9 @@ document.querySelector(".nav-links").addEventListener("click", (e) => {
             </div>
         </section>`;
     }
-    
+
     if (e.target && e.target.id === "osteopathie") {
-    content.innerHTML = `
+        content.innerHTML = `
     <section class="hero">
         <h1>L'Ostéopathie</h1>
     </section>
@@ -131,10 +131,10 @@ document.querySelector(".nav-links").addEventListener("click", (e) => {
         </div>
     </section>
     `;
-}
-    
-   if (e.target && e.target.id === "equipe") {
-    content.innerHTML = `
+    }
+
+    if (e.target && e.target.id === "equipe") {
+        content.innerHTML = `
     <section class="hero">
         <h1>Notre Équipe</h1>
     </section>
@@ -149,6 +149,7 @@ document.querySelector(".nav-links").addEventListener("click", (e) => {
                 <ul>
                     <li>Diplômé de l'Institut Supérieur d'Ostéopathie (ISO) de Lyon en 2001</li>
                     <li>Enseignant à l'Institut Supérieur d'Ostéopathie de Lyon de 2004 à 2021</li>
+                    <li>Enseignant à l'Institut Supérieur d'Ostéopathie de Lyon de 2004 à 2021</li>
                 </ul>
 
                 <h3>⚡ Pratique</h3>
@@ -157,6 +158,8 @@ document.querySelector(".nav-links").addEventListener("click", (e) => {
                     <li>Ostéopathie tissulaire</li>
                     <li>Ostéopathie crânienne</li>
                     <li>Ostéopathie viscérale</li>
+                    <li>Ostéopathie nourisson</li>
+                    <li>Ostéopathie sportif</li>
                 </ul>
 
                 <h3>📞 Contact</h3>
@@ -168,23 +171,26 @@ document.querySelector(".nav-links").addEventListener("click", (e) => {
             <div class="member-info">
                 <h2>Étienne BOUTET</h2>
                 <p class="title">Ostéopathe D.O.</p>
-                
-                <h3>⚡ Approche</h3>
-                <p class="bio">
-                    Étienne BOUTET accueille du lundi au samedi dans son cabinet à Grenoble. 
-                    Il exerce une ostéopathie globale adaptée à chaque patient. À l'écoute de 
-                    chacun de vos maux, il vous apporte des solutions curatives ou de confort 
-                    suivant les pathologies à l'aide de techniques ostéo-articulaires, crâniennes 
-                    et viscérales.
-                </p>
+                 
+                <h3>📚 Formation</h3>
+                    <ul>
+                        <li>Diplômé de l'Institut Supérieur d'Ostéopathie (ISO) de Lyon en 2011</li>
+                        <li>Formation complémentaire dans le suivie du sportif amateur et de haut niveau en 2012</li>
+                        <li>Formation à l'AFOE ( Vision de l'ostéopathie énergétique )</li>
+                        <li>Formation à la pratique de l'Etiomédecine ( Outil thérapeutique visant une approche globale de l'être en utilisant la pulsologie chinoise et l'auriculomédecine )</li>
+                    </ul>
 
-                <h3>👥 Patients</h3>
-                <ul>
-                    <li>Nouveau-nés et nourrissons</li>
-                    <li>Enfants et adolescents</li>
-                    <li>Adultes sportifs ou sédentaires</li>
-                    <li>Personnes âgées</li>
-                </ul>
+                    <h3>⚡ Pratique</h3>
+                    <ul>
+                        <li>Ostéopathie structurelle</li>
+                        <li>Ostéopathie tissulaire</li>
+                        <li>Ostéopathie crânienne</li>
+                        <li>Ostéopathie viscérale</li>
+                        <li>Ostéopathie nourisson</li>
+                        <li>Ostéopathie sportif</li>
+                        
+                    </ul>
+                
 
                 <h3>📞 Contact</h3>
                 <p>
@@ -195,10 +201,10 @@ document.querySelector(".nav-links").addEventListener("click", (e) => {
         </div>
     </section>
     `;
-}
-    
-if (e.target && e.target.id === "contact") {
-    content.innerHTML = `
+    }
+
+    if (e.target && e.target.id === "contact") {
+        content.innerHTML = `
     <section class="hero">
         <h1>Contactez-nous</h1>
     </section>
@@ -207,10 +213,10 @@ if (e.target && e.target.id === "contact") {
         <div class="contact-container">
             <div class="contact-info">
                 <h2>📍 Adresse</h2>
-                <p>
-                    <strong>Cabinet d'Ostéopathie</strong><br>
+                <p class="adress-text">
+                    <strong>Cabinet d'Ostéopathie<br>
                     6 Rue Anthoard<br>
-                    38000 Grenoble - Europole
+                    38000 Grenoble - Europole</strong>
                 </p>
 
                 <h2>📞 Téléphone</h2>
@@ -221,7 +227,8 @@ if (e.target && e.target.id === "contact") {
                 <p>
                     <strong>Étienne BOUTET :</strong><br>
                     <a href="tel:0673626992" class="contact-link">06 73 62 69 92</a><br>
-                    <a href="https://www.doctolib.fr/osteopathe/grenoble/etienne-boutet" target="_blank" class="contact-link">Prendre RDV sur Doctolib</a>
+                    <button href="https://www.doctolib.fr/osteopathe/grenoble/etienne-boutet" 
+                    target="_blank" class="btn-appointment" id="contact-mid-btn">Prendre RDV sur Doctolib</button>
                 </p>
 
                 <h2>🕐 Horaires</h2>
@@ -232,7 +239,7 @@ if (e.target && e.target.id === "contact") {
                     </tr>
                     <tr>
                         <td>Samedi</td>
-                        <td><strong>Sur rendez-vous (Étienne)</strong></td>
+                        <td><strong>9h00 - 13h00</strong></td>
                     </tr>
                     <tr>
                         <td>Dimanche</td>
@@ -242,7 +249,7 @@ if (e.target && e.target.id === "contact") {
 
                 <div class="appointment-box">
                     <h3>📅 Prendre rendez-vous</h3>
-                    <p>Contactez-nous par téléphone ou prenez RDV en ligne avec Étienne sur Doctolib.</p>
+                    <button class="btn-appointment">Contactez-nous par téléphone ou prenez RDV en ligne avec Étienne sur Doctolib.</button>
                 </div>
             </div>
 
@@ -262,31 +269,55 @@ if (e.target && e.target.id === "contact") {
                 <div class="access-info">
                     <h3>🚗 Accès</h3>
                     <ul>
-                        <li><strong>En voiture :</strong> Parking à proximité</li>
-                        <li><strong>En tram :</strong> Arrêt Europole - Gare (Ligne A)</li>
+                        <li><strong>En voiture :</strong> Stationnement dans la rue du cabinet </li>
+                        <li><strong>En tram :</strong> Arrêt Saint-Bruno - Gare (Ligne A)<br>
+                        </strong> Arrêt Palais de Justice - Gare (Ligne B)
+                        </li>
                         <li><strong>En bus :</strong> Lignes 13, 16</li>
                     </ul>
                 </div>
+            </div>
 
-                <div class="cabinet-gallery">
-                    <h2>Notre Cabinet</h2>
-                    <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <img src="./static/photo/porte_entree.jpg" alt="Entrée du cabinet">
-                            <p>Entrée du cabinet</p>
+            <div class="reviews-section">
+                <h2>⭐ Avis Google</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <h3>Mickaël FORCIOLI</h3>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-text">5.0 / 5</span>
                         </div>
-                        <div class="gallery-item">
-                            <img src="./static/photo/salle_attente.jpg" alt="Salle d'attente">
-                            <p>Salle d'attente</p>
+                        <a href="https://www.google.com/search?q=avis+sur+Micka%C3%ABl+FORCIOLI+-+ost%C3%A9opathe" target="_blank" class="review-link">Voir tous les avis Google</a>
+                    </div>
+                    <div class="review-card">
+                        <h3>Étienne BOUTET</h3>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-text">5.0 / 5</span>
                         </div>
-                        <div class="gallery-item">
-                            <img src="./static/photo/salle_etienne.jpg" alt="Cabinet Mickaël">
-                            <p>Cabinet de Mickaël</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="./static/photo/salle_etienne.jpg" alt="Cabinet Étienne">
-                            <p>Cabinet d'Étienne</p>
-                        </div>
+                        <a href="https://www.google.com/search?q=etienne+boutet+ost%C3%A9opathe" target="_blank" class="review-link">Voir tous les avis Google</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cabinet-gallery">
+                <h2>Notre Cabinet</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="./static/photo/porte_entree.jpg" alt="Entrée du cabinet">
+                        <p>Entrée du cabinet</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./static/photo/salle_attente.jpg" alt="Salle d'attente">
+                        <p>Salle d'attente</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./static/photo/salle_etienne.jpg" alt="Cabinet Mickaël">
+                        <p>Cabinet de Mickaël</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./static/photo/salle_etienne.jpg" alt="Cabinet Étienne">
+                        <p>Cabinet d'Étienne</p>
                     </div>
                 </div>
             </div>
@@ -314,11 +345,22 @@ if (e.target && e.target.id === "contact") {
             </div>
         </div>
     </section>`;
-}
+    }
 });
 
-document.querySelector("#contact-btn").addEventListener("click", () => {
-    content.innerHTML = ""; // Clear content
-    // Trigger contact page load (same code as clicking "Contact" button)
+document.querySelectorAll(".btn-appointment").forEach(button => {
+    button.addEventListener("click", () => {
+        content.innerHTML = "";
+        document.getElementById("contact").click();
+    });
+});
+
+document.querySelector("#contact-btn-bottom").addEventListener("click", () => {
+    content.innerHTML = "";
+    document.getElementById("contact").click();
+});
+
+document.querySelector("#contact-mid-btn").addEventListener("click", () => {
+    content.innerHTML = "";
     document.getElementById("contact").click();
 });
