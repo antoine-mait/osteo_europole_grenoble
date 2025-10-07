@@ -206,7 +206,7 @@ document.querySelector(".nav-links").addEventListener("click", (e) => {
     if (e.target && e.target.id === "contact") {
         content.innerHTML = `
     <section class="hero">
-        <h1>Contacte</h1>
+        <h1>Contactez-nous</h1>
     </section>
 
     <section class="contact-section">
