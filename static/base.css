@@ -40,6 +40,10 @@ nav {
     list-style: none;
 }
 
+.nav-links a {
+    text-decoration: none;
+}
+
 .nav-links button {
     text-decoration: none;
     color: white;
@@ -54,7 +58,8 @@ nav {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.nav-links button:hover {
+.nav-links button:hover,
+.nav-links button.active {
     background: #2c5f6f;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -62,6 +67,10 @@ nav {
 
 .nav-links button:active {
     transform: translateY(0);
+}
+
+nav > a {
+    text-decoration: none;
 }
 
 .btn-appointment {
@@ -74,6 +83,7 @@ nav {
     font-weight: 600;
     border: none;
     cursor: pointer;
+    display: inline-block;
 }
 
 .btn-appointment:hover {
@@ -110,6 +120,10 @@ nav {
 .cta-section h2 {
     margin-bottom: 1.5rem;
     font-size: 2rem;
+}
+
+.cta-section a {
+    text-decoration: none;
 }
 
 .cta-button {
@@ -180,9 +194,12 @@ footer {
         font-size: 14px;
     }
 
-    .btn-appointment {
+    nav > a {
         order: 3;
         width: auto;
+    }
+
+    .btn-appointment {
         padding: 0.6rem 1.2rem;
         font-size: 14px;
     }

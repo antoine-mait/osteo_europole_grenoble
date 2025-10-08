@@ -38,7 +38,7 @@
     background-image: url('./photo/mikael.jpg');
     mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
     -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
-    transform: scale(1.2) translateY(-15%) translateX(25%);
+    transform: scale(1.2) translateY(-5%) translateX(25%);
 }
 
 /* Étienne - droite avec dégradé vers la gauche */

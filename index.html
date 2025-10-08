@@ -3,42 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cabinet d’ostéopathie à [Ville] -
-     Ostéo Europole propose des soins adaptés pour adultes, enfants et sportifs. 
-     Prenez rendez-vous en ligne.">
-    <title>Cabinet d'Ostéopathie - Mickaël FORCIOLI & Étienne BOUTET</title>
+    <meta name="description" content="Cabinet d'ostéopathie à Grenoble Europole. Mickaël FORCIOLI et Étienne BOUTET, ostéopathes D.O. diplômés. Prise en charge adultes, enfants, nourrissons et sportifs.">
+    <meta name="keywords" content="ostéopathe Grenoble, ostéopathie Europole, Mickaël FORCIOLI, Étienne BOUTET, cabinet ostéopathie">
+    <title>Cabinet d'Ostéopathie Grenoble Europole - Mickaël FORCIOLI & Étienne BOUTET</title>
     <link rel="stylesheet" href="./static/base.css">
     <link rel="stylesheet" href="./static/accueil.css">
-    <link rel="stylesheet" href="./static/equipe.css">
-    <link rel="stylesheet" href="./static/osteopathie.css">
-    <link rel="stylesheet" href="./static/contact.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
+    <link rel="canonical" href="https://www.osteo-europole.fr/index.html">
 </head>
 <body>
     <nav>
         <div class="logo">Cabinet d'Ostéopathie - Europole</div>
         <ul class="nav-links">
-            <li><button id="accueil">Accueil</button></li>
-            <li><button id="osteopathie">L'Ostéopathie</button></li>
-            <li><button id="equipe">L'équipe</button></li>
-            <li><button id="contact">Contact</button></li>
+            <li><a href="index.html"><button class="active">Accueil</button></a></li>
+            <li><a href="osteopathie.html"><button>L'Ostéopathie</button></a></li>
+            <li><a href="equipe.html"><button>L'équipe</button></a></li>
+            <li><a href="contact.html"><button>Contact</button></a></li>
         </ul>
-        <button id="contact-btn" class="btn-appointment">Prendre Rendez-vous</button>
+        <a href="contact.html"><button class="btn-appointment">Prendre Rendez-vous</button></a>
     </nav>
-    <!-- ICI Remplacer par le code -->
-    <div class="content">
-        <section class="hero" id="accueil">
+
+    <section class="hero">
         <h1>Bienvenue sur le site du cabinet d'ostéopathie<br>
-            de Mickaël FORCIOLI et Étienne BOUTET
+            de Mickaël FORCIOLI et Étienne BOUTET à Grenoble
         </h1>
     </section>
 
-    <section class="team-section" id="equipe">
+    <section class="team-section">
         <div class="team-container">
             <div class="team-image">
-                <div id = "team-image-div">
-                    <img src = "./static/photo/duo.jpg" alt="Mickael et Etienne jpg">
+                <div id="team-image-div">
+                    <img src="./static/photo/duo.jpg" alt="Mickaël FORCIOLI et Étienne BOUTET, ostéopathes à Grenoble">
                 </div>
             </div>
             <div class="team-info">
@@ -70,18 +65,13 @@
         </div>
     </section>
 
-    </div>
-<!--  -->
-    <section class="cta-section" id="rdv">
+    <section class="cta-section">
         <h2>Pour toute prise de rendez-vous</h2>
-         <button id="contact-btn-bottom" class="cta-button">Cliquez ici</button>
+        <a href="contact.html"><button class="cta-button">Contactez-nous</button></a>
     </section>
 
     <footer>
         <p>&copy; 2025 Cabinet d'Ostéopathie Mickaël FORCIOLI & Étienne BOUTET - Tous droits réservés</p>
     </footer>
 </body>
-
-<script src="./static/javascript.js?v=5"></script>
-
 </html>
