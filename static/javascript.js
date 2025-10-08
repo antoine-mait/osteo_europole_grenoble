@@ -312,7 +312,7 @@ document.querySelector(".nav-links").addEventListener("click", (e) => {
                         <p>Salle d'attente</p>
                     </div>
                     <div class="gallery-item">
-                        <img src="./static/photo/salle_etienne.jpg" alt="Cabinet Mickaël">
+                        <img src="./static/photo/salle_mickael.jpeg" alt="Cabinet Mickaël">
                         <p>Cabinet de Mickaël</p>
                     </div>
                     <div class="gallery-item">
