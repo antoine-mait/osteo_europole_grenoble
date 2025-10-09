@@ -4,6 +4,7 @@ const blogPosts = [
         title: "Les bienfaits de l'ostéopathie pour les sportifs",
         excerpt: "Découvrez comment l'ostéopathie peut améliorer vos performances sportives et prévenir les blessures.",
         date: "2025-10-09",
+        author: "Test dev auteur",
         image: "./static/photo/sportif.jpg",
         file: "sportif.html"
     },
@@ -11,6 +12,7 @@ const blogPosts = [
         title: "L'ostéopathie pédiatrique : prendre soin des plus petits",
         excerpt: "Pourquoi consulter un ostéopathe pour votre bébé ? Les réponses à vos questions.",
         date: "2025-10-09",
+        author: "Test dev auteur",
         image: "./static/photo/bebe.jpg",
         file: "pediatrie.html"
     },
@@ -18,6 +20,7 @@ const blogPosts = [
         title: "Mal de dos : quand consulter un ostéopathe ?",
         excerpt: "Comprendre les causes du mal de dos et comment l'ostéopathie peut vous soulager.",
         date: "2025-10-09",
+        author: "Test dev auteur",
         image: "./static/photo/dos.jpg",
         file: "mal-de-dos.html"
     }
@@ -43,7 +46,10 @@ function generateBlogCards() {
         card.innerHTML = `
             <div class="blog-image" style="background-image: url('${post.image}');"></div>
             <div class="blog-content">
-                <div class="blog-date">${formatDate(post.date)}</div>
+                <div class="blog-meta">
+                    <span class="blog-date">${formatDate(post.date)}</span>
+                    ${post.author ? `<span class="separator">·</span><span class="blog-author">${post.author}</span>` : ""}
+                </div>
                 <h2>${post.title}</h2>
                 <p>${post.excerpt}</p>
                 <a href="./blog/${post.file}" class="read-more">Lire l'article →</a>

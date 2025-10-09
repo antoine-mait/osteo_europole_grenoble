@@ -83,13 +83,37 @@
     padding: 1.5rem;
 }
 
-.blog-date {
-    color: #5a8a96;
+.blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
+    font-weight: 500;
+    color: #5a8a96;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+
+.blog-meta .separator {
+    font-size: 1.1em;
+    opacity: 0.7;
+    position: relative;
+    top: 0;
+}
+
+.blog-date,
+.blog-author {
+    font-family: inherit;
+    color: #5a8a96;
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+.blog-author {
+    text-transform: none;
+    font-weight: 500;
 }
 
 .blog-card h2 {
