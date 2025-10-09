@@ -1,0 +1,57 @@
+Dans blog.js ( dans le dossier static ) 
+tu as : const blogPosts = []
+Entre les [] de blogPosts , c'est les vignettes de poste que tu vois en affichant tout les articles.
+tu ajoute une , après le derniere "}" puis tu copie colle ca : 
+
+    {
+        title: "Ici tu écrit ton titre",
+        excerpt: "Ici la description",
+        date: "2025-10-09",
+        author: "Test dev auteur",
+        image: "./static/photo/nom_de_ton_image.jpg",
+        file: "nom_du_fichier.html"
+    }
+
+C'est tout ce que tu as a changer dans le blog.js
+
+
+Je suis aller chercher les photos ici : https://www.pexels.com/fr-fr/
+N'importe quel autre site avec photo libre de droit ( pour etre sur de pas avoir de probleme )
+
+Tu telecharge ta photo et tu la met dans le dossier photo qui est dans le dossier static.
+
+Créer la page html pour ton sujet dans le blog 
+
+tu copie sportif.html ( clique droit copier , clique droit coller ou ctrl + c et ctrl+ v ) 
+dans le dossier blog
+tu le renomme periostite_tibial.html
+
+Je t'ai mit des indication 
+<!-- Ce que tu peut changer -->
+
+blabla 
+
+<!-- fin de ce que tu peut changer -->
+
+tout ce qui est dedans c'est ton text
+
+<h1> C'est ton titre
+<br> c'est pour aller a la ligne 
+
+<div> c'est un bloc , le premier c'est pour la date et l'auteur ( si tu veux mettre ) 
+
+<p> c'est pour un paragraphe
+
+<h2> c'est un sous titre ( titre mais moin grand )
+
+<ul> c'est quand tu veux avoir des point tu met <ul> puis des <li> point 1 </li> </ul>
+
+<ul>
+    <li> point 1 <li>
+</ul>
+
+comme sur la page
+
+VOILA
+
+Si tu veux pas t'embeter a tout écrire

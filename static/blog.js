@@ -23,6 +23,14 @@ const blogPosts = [
         author: "Test dev auteur",
         image: "./static/photo/dos.jpg",
         file: "mal-de-dos.html"
+    },
+    {
+        title: "Voyage sous la peau",
+        excerpt: "Comportement du Fascia dans les différents système du corps",
+        date: "2025-10-09",
+        author: "Dr. GUIMBERTEAU",
+        image: "./static/photo/guimberteau.jpg",
+        file: "fascia.html"
     }
 ];
 
