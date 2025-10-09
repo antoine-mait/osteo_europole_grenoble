@@ -27,7 +27,7 @@ const blogPosts = [
     {
         title: "Voyage sous la peau",
         excerpt: "Comportement du Fascia dans les différents système du corps",
-        date: "2025-10-09",
+        date: "2018-11-22",
         author: "Dr. GUIMBERTEAU",
         image: "./static/photo/guimberteau.jpg",
         file: "fascia.html"

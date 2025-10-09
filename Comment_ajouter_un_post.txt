@@ -26,7 +26,7 @@ tu copie sportif.html ( clique droit copier , clique droit coller ou ctrl + c et
 dans le dossier blog
 tu le renomme periostite_tibial.html
 
-Je t'ai mit des indication 
+Je t'ai mis des indication 
 <!-- Ce que tu peut changer -->
 
 blabla 
