@@ -99,7 +99,7 @@
 }
 
 /* ========== RESPONSIVE BASE ========== */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .team-section {
         padding: 3rem 1.5rem;
     }

@@ -177,7 +177,7 @@
 }
 
 /* ========== RESPONSIVE BASE ========== */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     /* Adjust team section for tablets */
     .team-detail-section {
         flex-direction: column;

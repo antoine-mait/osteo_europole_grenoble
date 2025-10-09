@@ -19,6 +19,13 @@
             <li><a href="osteopathie.html"><button>L'Ostéopathie</button></a></li>
             <li><a href="equipe.html"><button>L'équipe</button></a></li>
             <li><a href="contact.html"><button>Contact</button></a></li>
+            <li class="dropdown">
+                <button>Blog ▼</button>
+                <div class="dropdown-content" id="blogDropdown">
+                    <a href="blog.html">Tous les articles</a>
+                    <div id="blogLinks"></div>
+                </div>
+            </li>
         </ul>
         <a href="contact.html"><button class="btn-appointment">Prendre Rendez-vous</button></a>
     </nav>
@@ -78,34 +85,34 @@
 
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@type": ["MedicalBusiness", "Physiotherapy"]
-    "name": "Cabinet d\u0027Ostéopathie Étienne BOUTET et Micka\u00ebl FORCIOLI",
-    "image": "https://www.osteo-europole.fr/static/photo/duo.jpg",
-    "url": "https://osteo-europole.fr",
-    "telephone": "06 73 62 69 92",
-    "priceRange": "€€",  
-    "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "6 Rue Anthoard",
-        "addressLocality": "Grenoble",
-        "postalCode": "38000",
-        "addressCountry": "FR"
-    },
-    "openingHours": "Mo-Fr 09:00-19:00",  
-    "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "45.189388",
-        "longitude": "5.713497"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "28"
-    }
+        "@context": "https://schema.org",
+        "@type": ["MedicalBusiness", "Physiotherapy"],
+        "name": "Cabinet d'Ostéopathie Étienne BOUTET et Mickaël FORCIOLI",
+        "image": "https://www.osteo-europole.fr/static/photo/duo.jpg",
+        "url": "https://osteo-europole.fr",
+        "telephone": "06 73 62 69 92",
+        "priceRange": "€€",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6 Rue Anthoard",
+            "addressLocality": "Grenoble",
+            "postalCode": "38000",
+            "addressCountry": "FR"
+        },
+        "openingHours": "Mo-Fr 09:00-19:00",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "45.189388",
+            "longitude": "5.713497"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "28"
+        }
     }
     </script>
 
-
+    <script src="./static/blog.js"></script>
 </body>
 </html>

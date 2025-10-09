@@ -92,6 +92,58 @@ nav > a {
     box-shadow: 0 5px 15px rgba(65, 105, 225, 0.3);
 }
 
+/* ========== DROPDOWN MENU ========== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.98);
+    min-width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1001;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f5f7;
+    border-left: 3px solid #2c5f6f;
+    color: #2c5f6f;
+}
+
+.dropdown button {
+    cursor: pointer;
+}
+
+#blogLinks {
+    display: block;
+}
+
+#blogLinks a {
+    border-top: 1px solid #eee;
+}
+
+#blogLinks a:first-child {
+    border-top: none;
+}
+
 /* ========== HERO SECTION ========== */
 .hero {
     background: linear-gradient(135deg, #5a8a96 0%, #7ba8b5 100%);
@@ -166,7 +218,7 @@ footer {
 }
 
 /* ========== RESPONSIVE BASE ========== */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     nav {
         flex-wrap: wrap;
         padding: 1rem;
@@ -202,6 +254,12 @@ footer {
     .btn-appointment {
         padding: 0.6rem 1.2rem;
         font-size: 14px;
+    }
+
+    .dropdown-content {
+        min-width: 260px;
+        left: auto;
+        right: 0;
     }
 
     .hero {
@@ -244,6 +302,10 @@ footer {
     .btn-appointment {
         padding: 0.5rem 1rem;
         font-size: 12px;
+    }
+
+    .dropdown-content {
+        min-width: 220px;
     }
     
     .hero {
